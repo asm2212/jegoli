@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/common/color_extension.dart';
-import 'package:jegoli/screens/login/welcome_screen.dart';
+import 'package:jegoli/screens/welcome/welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

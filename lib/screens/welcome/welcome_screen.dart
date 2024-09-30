@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
-import 'package:jegoli/screens/login/login_screen.dart';
+import 'package:jegoli/screens/auth/login_screen.dart';
+import 'package:jegoli/screens/auth/signup_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -95,7 +96,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
               child: RoundButton(
-                onPressed: () {}, 
+                onPressed: () {
+                     Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SignupScreen())
+                  );
+                }, 
                 type: RoundButtonType.textPrimary,
                 title: "Create an Account"),
             ),

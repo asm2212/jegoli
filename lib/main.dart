@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jegoli/screens/welcome/splash_screen.dart';
+import 'package:jegoli/screens/start/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
