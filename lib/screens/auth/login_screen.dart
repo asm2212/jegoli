@@ -6,6 +6,7 @@ import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/auth/reset_password_screen.dart';
 import 'package:jegoli/screens/auth/signup_screen.dart';
+import 'package:jegoli/screens/shop/on_boarding.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -57,7 +58,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 obscureText: true,
               ),
               const SizedBox(height: 20),
-              RoundButton(onPressed: () {}, title: "Login"),
+              RoundButton(onPressed: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context)=> const OnBoarding()));
+              }, title: "Login"),
               TextButton(
                 onPressed: () {
                   Navigator.push(
