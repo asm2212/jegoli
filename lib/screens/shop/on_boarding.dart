@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/main_tab/main_tab_screen.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -9,7 +10,7 @@ class OnBoarding extends StatefulWidget {
   State<OnBoarding> createState() => _OnBoardingState();
 }
 
-class _OnBoardingState extends State<OnBoarding> {
+class _OnBoardingState extends State<OnBoarding> {   
   int selectPage = 0;
   PageController controller = PageController();
   List pageArr = [
@@ -127,10 +128,17 @@ class _OnBoardingState extends State<OnBoarding> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: RoundButton(
                   onPressed: () {
-                    controller.nextPage(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.easeInOut,
-                    );
+                    if (selectPage >= 2){
+                      Navigator.push(context,
+                       MaterialPageRoute(builder: (context) => const MainTabScreen()));
+                    } else {
+                      setState(() {
+                        selectPage = selectPage +1 ;
+                        controller.animateToPage(selectPage,
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut);
+                      });
+                    }
                   },
                   title: "Next",
                 ),

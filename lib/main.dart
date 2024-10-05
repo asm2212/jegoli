@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'food delivery app',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Metropolis",
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        // useMaterial3: true,
       ),
       home: const SplashScreen(),
     );
