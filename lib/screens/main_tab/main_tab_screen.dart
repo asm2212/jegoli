@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/tab_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/home/home_screen.dart';
+import 'package:jegoli/screens/menu/menu_screen.dart';
 
 class MainTabScreen extends StatefulWidget {
   const MainTabScreen({super.key});
@@ -56,7 +57,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
               onTap: (){
                 if(selectTab != 0){
                   selectTab = 0;
-                  selectPageView = Container();
+                  selectPageView = const MenuScreen();
                 }if(mounted){
                   setState(() {});
             }
