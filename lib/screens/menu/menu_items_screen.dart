@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/menu_item_row.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/menu/item_details_screen.dart';
 
 class MenuItemsScreen extends StatefulWidget {
   final Map mObj;
@@ -100,7 +101,7 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     const Spacer(),
-                    IconButton(
+                    IconButton( 
                       onPressed: () {},
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",
@@ -135,7 +136,13 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
                 itemCount: menuItemsArr.length,
                 itemBuilder: (context, index) {
                   var mObj = menuItemsArr[index] as Map? ?? {};
-                  return MenuItemRow(mObj: mObj, onTap: () {});
+                  return MenuItemRow(mObj: mObj, onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context)=> const ItemDetailsScreen()),
+                    );
+                  });
                 },
               ),
             ],
