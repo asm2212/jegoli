@@ -3,6 +3,7 @@ import 'package:jegoli/co_widget/tab_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/home/home_screen.dart';
 import 'package:jegoli/screens/menu/menu_screen.dart';
+import 'package:jegoli/screens/offer/offer_screen.dart';
 
 class MainTabScreen extends StatefulWidget {
   const MainTabScreen({super.key});
@@ -71,7 +72,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
               onTap: (){
                 if(selectTab != 1){
                   selectTab = 1;
-                  selectPageView = Container();
+                  selectPageView = const OfferScreen();
                 }if(mounted){
                   setState(() {});
             }
