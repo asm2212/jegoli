@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jegoli/co_widget/popular_resutaurant_row.dart';
+import 'package:jegoli/co_widget/popular_restaurant_row.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 
@@ -16,10 +16,10 @@ class _OfferScreenState extends State<OfferScreen> {
   List offerArr = [
     {
       "image": "assets/images/offer_1.png",
-      "name": "Minute by tuk tuk",
+      "name": "Special Fizza",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
@@ -27,7 +27,7 @@ class _OfferScreenState extends State<OfferScreen> {
       "name": "Cafe De Noir",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
@@ -35,15 +35,15 @@ class _OfferScreenState extends State<OfferScreen> {
       "name": "Bakes by Tella",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
       "image": "assets/images/offer_1.png",
-      "name": "Minute by tuk tuk",
+      "name": "Special Fizza",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
@@ -51,7 +51,7 @@ class _OfferScreenState extends State<OfferScreen> {
       "name": "Cafe De Noir",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
@@ -59,7 +59,7 @@ class _OfferScreenState extends State<OfferScreen> {
       "name": "Bakes by Tella",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
   ];

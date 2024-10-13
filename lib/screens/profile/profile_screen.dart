@@ -150,7 +150,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
                 child: RoundTitleTextfield(
-                  title: "Mobile",
+                  title: "Mobile No",
                   hintText: "Enter Mobile Number",
                   keyboardType: TextInputType.phone,
                   controller: mobileController,
@@ -185,14 +185,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   controller: confirmPasswordController,
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: RoundButton(onPressed: () {}, title: "Save"),
+               
               ),
+                const SizedBox(height: 35,),
             ],
           ),
         ),
+         
       ),
     );
   }

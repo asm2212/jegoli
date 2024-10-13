@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/category_cell.dart';
 import 'package:jegoli/co_widget/most_popular_cell.dart';
-import 'package:jegoli/co_widget/popular_resutaurant_row.dart';
+import 'package:jegoli/co_widget/popular_restaurant_row.dart';
 import 'package:jegoli/co_widget/recent_item_row.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/co_widget/view_all_title_row.dart';
