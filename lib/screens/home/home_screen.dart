@@ -18,8 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController searchController = TextEditingController();
 
   List catArr = [
-    {"image": "assets/images/cat_offer.png", "name": "Offers"},
-    {"image": "assets/images/cat_sri.png", "name": "Sri Lankan"},
+    {"image": "assets/images/injera.jpg", "name": "InjDishes"},
+    {"image": "assets/images/cat_sri.png", "name": "VegeDishes"},
     {"image": "assets/images/cat_3.png", "name": "Italian"},
     {"image": "assets/images/cat_4.png", "name": "Indian"},
   ];
@@ -27,18 +27,18 @@ class _HomeScreenState extends State<HomeScreen> {
   List popArr = [
     {
       "image": "assets/images/res_1.png",
-      "name": "Minute by tuk tuk",
+      "name": "Special Fizza",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
       "image": "assets/images/res_2.png",
-      "name": "Cafe De Noir",
+      "name": "ChickenSizz",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       "name": "Bakes by Tella",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
   ];
@@ -54,18 +54,18 @@ class _HomeScreenState extends State<HomeScreen> {
   List mostPopArr = [
     {
       "image": "assets/images/m_res_1.png",
-      "name": "Minute by tuk tuk",
+      "name": "Special Fizza",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
       "image": "assets/images/m_res_2.png",
-      "name": "Cafe De Noir",
+      "name": "ChickenSizz",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
   ];
@@ -76,23 +76,23 @@ class _HomeScreenState extends State<HomeScreen> {
       "name": "Mulberry Pizza by Josh",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
-      "image": "assets/images/item_2.png",
-      "name": "Barita",
+      "image": "assets/images/whChic.jpg",
+      "name": "FChiken",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
     {
-      "image": "assets/images/item_3.png",
-      "name": "Pizza Rush Hour",
+      "image": "assets/images/sandchi.jpg",
+      "name": "Sand Wich",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
   ];
