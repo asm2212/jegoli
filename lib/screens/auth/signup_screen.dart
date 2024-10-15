@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/common/color_extension.dart';

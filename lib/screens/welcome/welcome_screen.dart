@@ -18,7 +18,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height * 0.45,
               child: Stack(
                 alignment: Alignment.center,

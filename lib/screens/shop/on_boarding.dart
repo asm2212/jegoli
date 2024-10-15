@@ -123,7 +123,7 @@ class _OnBoardingState extends State<OnBoarding> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Spacer(),
+              const Spacer(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: RoundButton(

@@ -21,7 +21,7 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
       "name": "French Apple Pie",
       "rate": "4.9",
       "rating": "124",
-      "type": "minute by tuk tuk",
+      "type": "Special Fizza",
       "food_type": "Desserts"
     },
     {
@@ -45,7 +45,7 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
       "name": "Bakes by Tella",
       "rate": "4.9",
       "rating": "124",
-      "type": "cafa",
+      "type": "cafe",
       "food_type": "Western Food"
     },
        {
@@ -53,7 +53,7 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
       "name": "French Apple Pie",
       "rate": "4.9",
       "rating": "124",
-      "type": "minute by tuk tuk",
+      "type": "Special Fizza",
       "food_type": "Desserts"
     },
     {
@@ -61,7 +61,7 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
       "name": "Dark Chocolate Cake",
       "rate": "4.9",
       "rating": "124",
-      "type": "cakes by Tella",
+      "type": "cakes ",
       "food_type": "Western Food"
     },
   ];
