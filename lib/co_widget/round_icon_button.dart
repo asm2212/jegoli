@@ -8,12 +8,14 @@ class RoundIconButton extends StatelessWidget {
   final Color color;
   final VoidCallback onPressed;
   final double fontSize;
+  final FontWeight fontWeight;
   const RoundIconButton(
       {super.key,
       required this.onPressed,
       required this.title,
       required this.icon,
       required this.color,
+      this.fontWeight=FontWeight.w500,
       this.fontSize = 12
       });
 

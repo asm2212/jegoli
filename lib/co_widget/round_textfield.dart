@@ -22,39 +22,42 @@ class RoundTextfield extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return    Container(
-                decoration: BoxDecoration(
-                color: bgColor ?? ColorExtension.textfield,
-                borderRadius: BorderRadius.circular(25)
-                ),
-                child: Row(
-                  children: [
-                    if(left != null) Padding(
-                      padding: const EdgeInsets.only(left: 15,),
-                      child: left,
-                      ),
-                    Expanded(
-                      child: TextField(
-                        autocorrect: false,
-                        controller: controller,
-                        obscureText: obscureText,
-                        keyboardType: keyboardType,
-                        decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 20,),
-                          enabledBorder: InputBorder.none,
-                          focusedBorder: InputBorder.none,
-                          hintText: hintText,
-                          hintStyle: TextStyle(
-                            color: ColorExtension.placeholder,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500
-                          ),
-                        ),
-                        ),
-                    ),
-                  ],
-                ),
-              );
+    return   Container(
+  decoration: BoxDecoration(
+    color: bgColor ?? ColorExtension.textfield,
+    borderRadius: BorderRadius.circular(25),
+  ),
+  child: Row(
+    mainAxisSize: MainAxisSize.min,  // Use MainAxisSize.min to avoid unbounded width issue
+    children: [
+      if (left != null) 
+        Padding(
+          padding: const EdgeInsets.only(left: 15,),
+          child: left,
+        ),
+      Flexible(  // Use Flexible instead of Expanded to prevent infinite space
+        fit: FlexFit.loose,
+        child: TextField(
+          autocorrect: false,
+          controller: controller,
+          obscureText: obscureText,
+          keyboardType: keyboardType,
+          decoration: InputDecoration(
+            contentPadding: const EdgeInsets.symmetric(horizontal: 20,),
+            enabledBorder: InputBorder.none,
+            focusedBorder: InputBorder.none,
+            hintText: hintText,
+            hintStyle: TextStyle(
+              color: ColorExtension.placeholder,
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+      ),
+    ],
+  ),
+);
   }
 }
 

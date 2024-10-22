@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/co_widget/round_icon_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/add_cart_screen.dart';
 
 class PaymentDetailsScreen extends StatefulWidget {
   const PaymentDetailsScreen({super.key});
@@ -200,8 +201,19 @@ class _PaymentDetailsScreenState extends State<PaymentDetailsScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: RoundIconButton(
+                  
                   onPressed: () {
-                    // Add card functionality
+                    showModalBottomSheet(
+                      isScrollControlled: true,
+                      backgroundColor: Colors.transparent,
+                      context: context,
+                       builder: (context){
+                      return const AddCartScreen();
+                    });
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => const AddCartScreen(),),);
                   },
                   title: "Add Another Credit/Debit Card",
                   icon: "assets/images/add.png",
