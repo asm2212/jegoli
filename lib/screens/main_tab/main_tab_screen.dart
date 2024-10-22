@@ -3,6 +3,7 @@ import 'package:jegoli/co_widget/tab_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/home/home_screen.dart';
 import 'package:jegoli/screens/menu/menu_screen.dart';
+import 'package:jegoli/screens/more/more_screen.dart';
 import 'package:jegoli/screens/offer/offer_screen.dart';
 import 'package:jegoli/screens/profile/profile_screen.dart';
 
@@ -103,7 +104,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
               onTap: (){
                 if(selectTab != 4){
                   selectTab = 4;
-                  selectPageView = Container();
+                  selectPageView = const MoreScreen();
                 }if(mounted){
                   setState(() {});
             }
