@@ -73,7 +73,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin:const  EdgeInsets.only(top: 4),
+                          margin:const  EdgeInsets.only(top: 10),
                           width: 6,
                           height: 6,
                           decoration: BoxDecoration(

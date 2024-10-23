@@ -58,7 +58,7 @@ class _AddCartScreenState extends State<AddCartScreen> {
               ],
             ),
             Divider(
-              color: ColorExtension.secondaryText.withOpacity(0.4),
+              color: ColorExtension.secondaryText.withOpacity(0.1),
               height: 1,
             ),
             const SizedBox(

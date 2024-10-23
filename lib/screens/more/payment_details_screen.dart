@@ -82,7 +82,7 @@ class _PaymentDetailsScreenState extends State<PaymentDetailsScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 35),
                 child: Divider(
-                  color: ColorExtension.secondaryText.withOpacity(0.4),
+                  color: ColorExtension.secondaryText.withOpacity(0.15),
                   height: 1,
                 ),
               ),
@@ -120,7 +120,7 @@ class _PaymentDetailsScreenState extends State<PaymentDetailsScreen> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 35),
                       child: Divider(
-                        color: ColorExtension.secondaryText.withOpacity(0.4),
+                        color: ColorExtension.secondaryText.withOpacity(0.15),
                         height: 1,
                       ),
                     ),
@@ -174,7 +174,7 @@ class _PaymentDetailsScreenState extends State<PaymentDetailsScreen> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 40),
                       child: Divider(
-                        color: ColorExtension.secondaryText.withOpacity(0.4),
+                        color: ColorExtension.secondaryText.withOpacity(0.15),
                         height: 1,
                       ),
                     ),

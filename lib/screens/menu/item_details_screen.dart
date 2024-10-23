@@ -188,7 +188,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen> {
                                   const EdgeInsets.symmetric(horizontal: 25),
                               child: Divider(
                                 color: ColorExtension.secondaryText
-                                    .withOpacity(0.2),
+                                    .withOpacity(0.14),
                                 height: 1,
                               ),
                             ),

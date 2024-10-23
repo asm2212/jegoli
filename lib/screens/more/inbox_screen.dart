@@ -73,7 +73,7 @@ List inboxArr = [
                 separatorBuilder: (context, index) => Divider(
                   endIndent: 25,
                   indent: 25,
-                  color: ColorExtension.secondaryText.withOpacity(0.4),
+                  color: ColorExtension.secondaryText.withOpacity(0.1),
                   height: 0.6,
                 ),
                 itemBuilder: ((context, index) {

@@ -72,7 +72,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 separatorBuilder: (context, index) => Divider(
                   endIndent: 25,
                   indent: 25,
-                  color: ColorExtension.secondaryText.withOpacity(0.4),
+                  color: ColorExtension.secondaryText.withOpacity(0.1),
                   height: 0.6,
                 ),
                 itemBuilder: ((context, index) {
@@ -89,7 +89,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                           margin:const  EdgeInsets.only(top: 4),
+                           margin:const  EdgeInsets.only(top: 6),
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
