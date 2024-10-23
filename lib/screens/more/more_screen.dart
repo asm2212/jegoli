@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/more/about_us_screen.dart';
-import 'package:jegoli/screens/more/example_screen.dart';
+import 'package:jegoli/screens/more/inbox_screen.dart';
 import 'package:jegoli/screens/more/notificationsscreen.dart';
 import 'package:jegoli/screens/more/payment_details_screen.dart';
 import 'package:jegoli/screens/more/placeholder_screen.dart';
@@ -42,7 +42,7 @@ class _MoreScreenState extends State<MoreScreen> {
       "name": "Inbox",
       "image": "assets/images/more_inbox.png",
       "base": 0,
-      "screen": const ExampleScreen(), // Define this screen
+      "screen": const InboxScreen(), // Define this screen
     },
     {
       "index": "5",
@@ -97,7 +97,6 @@ class _MoreScreenState extends State<MoreScreen> {
                 itemBuilder: (context, index) {
                   var mObj = moreArr[index] as Map? ?? {};
                   var countBase = mObj["base"] as int? ?? 0;
-
                   return InkWell(
                     onTap: () {
                       // Navigate to the respective screen
