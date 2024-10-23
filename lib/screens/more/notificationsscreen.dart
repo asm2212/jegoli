@@ -89,6 +89,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
+                           margin:const  EdgeInsets.only(top: 4),
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
