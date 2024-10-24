@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/more/about_us_screen.dart';
 import 'package:jegoli/screens/more/inbox_screen.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 import 'package:jegoli/screens/more/notificationsscreen.dart';
 import 'package:jegoli/screens/more/payment_details_screen.dart';
-import 'package:jegoli/screens/more/placeholder_screen.dart';
 
 
 class MoreScreen extends StatefulWidget {
@@ -28,7 +28,7 @@ class _MoreScreenState extends State<MoreScreen> {
       "name": "My Orders",
       "image": "assets/images/more_my_order.png",
       "base": 0,
-    "screen": const PlaceholderScreen(),// Define this screen
+    "screen": const MyOrderScreen(),// Define this screen
     },
     {
       "index": "3",
