@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -57,7 +58,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                             Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const MyOrderScreen()));
+                      },
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",
                         width: 25,

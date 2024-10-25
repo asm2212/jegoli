@@ -3,6 +3,7 @@ import 'package:jegoli/co_widget/menu_item_row.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/menu/item_details_screen.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class MenuItemsScreen extends StatefulWidget {
   final Map mObj;
@@ -102,7 +103,12 @@ class _MenuItemsScreenState extends State<MenuItemsScreen> {
                     ),
                     const Spacer(),
                     IconButton( 
-                      onPressed: () {},
+                      onPressed: () {
+                          Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const MyOrderScreen()));
+                      },
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",
                         width: 25,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class InboxScreen extends StatefulWidget {
   const InboxScreen({super.key});
@@ -56,7 +57,10 @@ List inboxArr = [
                 ),
                 IconButton(
                   onPressed: () {
-                    // Implement shopping cart functionality
+                         Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const MyOrderScreen()));
                   },
                   icon: Image.asset(
                     "assets/images/shopping_cart.png",

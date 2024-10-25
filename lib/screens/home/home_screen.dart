@@ -6,6 +6,7 @@ import 'package:jegoli/co_widget/recent_item_row.dart';
 import 'package:jegoli/co_widget/round_textfield.dart';
 import 'package:jegoli/co_widget/view_all_title_row.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -121,7 +122,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                         
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => const MyOrderScreen()));
+                                          
+                      },
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",
                         width: 25,

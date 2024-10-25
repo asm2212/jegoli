@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/popular_restaurant_row.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class OfferScreen extends StatefulWidget {
   const OfferScreen({super.key});
@@ -89,7 +90,12 @@ class _OfferScreenState extends State<OfferScreen> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                             Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const MyOrderScreen()));
+                      },
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",
                         width: 25,

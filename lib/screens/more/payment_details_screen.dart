@@ -3,6 +3,7 @@ import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/co_widget/round_icon_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/more/add_cart_screen.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class PaymentDetailsScreen extends StatefulWidget {
   const PaymentDetailsScreen({super.key});
@@ -56,7 +57,9 @@ class _PaymentDetailsScreenState extends State<PaymentDetailsScreen> {
                     ),
                     IconButton(
                       onPressed: () {
-                        // Implement shopping cart functionality
+                       
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => const MyOrderScreen()));
+                                          
                       },
                       icon: Image.asset(
                         "assets/images/shopping_cart.png",

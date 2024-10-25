@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class AboutUsScreen extends StatefulWidget {
   const AboutUsScreen({super.key});
@@ -49,7 +50,10 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                 ),
                 IconButton(
                   onPressed: () {
-                    // Implement shopping cart functionality
+                       Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const MyOrderScreen()));
                   },
                   icon: Image.asset(
                     "assets/images/shopping_cart.png",

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:jegoli/co_widget/round_icon_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/my_order_screen.dart';
 
 class ItemDetailsScreen extends StatefulWidget {
   const ItemDetailsScreen({super.key});
@@ -465,25 +466,30 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen> {
                                             ],
                                           ),
                                         ),
-                                        Container(
-                                          width: 45,
-                                          height: 45,
-                                          decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius:
-                                                  BorderRadius.circular(21.5),
-                                              boxShadow: const [
-                                                BoxShadow(
-                                                    color: Colors.black12,
-                                                    blurRadius: 4,
-                                                    offset: Offset(0, 1))
-                                              ]),
-                                          alignment: Alignment.center,
-                                          child: Image.asset(
-                                            "assets/images/shopping_cart.png",
-                                            width: 15,
-                                            height: 15,
-                                            color: ColorExtension.primary,
+                                        InkWell(
+                                          onTap: (){
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => const MyOrderScreen()));
+                                          },
+                                          child: Container(
+                                            width: 45,
+                                            height: 45,
+                                            decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                borderRadius:
+                                                    BorderRadius.circular(21.5),
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                      color: Colors.black12,
+                                                      blurRadius: 4,
+                                                      offset: Offset(0, 1))
+                                                ]),
+                                            alignment: Alignment.center,
+                                            child: Image.asset(
+                                              "assets/images/shopping_cart.png",
+                                              width: 15,
+                                              height: 15,
+                                              color: ColorExtension.primary,
+                                            ),
                                           ),
                                         )
                                         // Row(
