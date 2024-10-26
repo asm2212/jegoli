@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/checkout_screen.dart';
 
 class MyOrderScreen extends StatefulWidget {
   const MyOrderScreen({super.key});
@@ -371,7 +372,12 @@ class _MyOrderScreenState extends State<MyOrderScreen> {
                     ],
                   ),
                   const SizedBox(height: 25,),
-                  RoundButton(onPressed: (){}, title: "Checkout"),
+                  RoundButton(onPressed: (){
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => const CheckoutScreen()));
+                  }, title: "Checkout"),
                 const SizedBox(height: 55,),
                 ],
               )
