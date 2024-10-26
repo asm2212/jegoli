@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
+import 'package:jegoli/screens/more/change_address.dart';
 
 class CheckoutScreen extends StatefulWidget {
   const CheckoutScreen({super.key});
@@ -66,7 +67,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                             style: TextStyle(
                               color: ColorExtension.secondaryText,
                               fontSize: 11,
-                              fontWeight: FontWeight.w400
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                           const SizedBox(height: 6),
@@ -83,7 +84,14 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                               ),
                               const SizedBox(width: 30),
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const ChangeAddress()),
+                                  );
+                                },
                                 child: Text(
                                   "Change",
                                   style: TextStyle(
@@ -100,11 +108,10 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                   ],
                 ),
               ),
-                 Divider(
-                      color: ColorExtension.primaryText.withOpacity(0.1),
-                      thickness: 10,
-                    ),
-
+              Divider(
+                color: ColorExtension.primaryText.withOpacity(0.1),
+                thickness: 10,
+              ),
               const SizedBox(height: 5),
               Container(
                 decoration: BoxDecoration(color: ColorExtension.textfield),
@@ -148,7 +155,8 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         var pObj = paymentArr[index];
                         return Container(
                           margin: const EdgeInsets.symmetric(vertical: 6),
-                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 15),
                           decoration: BoxDecoration(
                             color: ColorExtension.textfield,
                             borderRadius: BorderRadius.circular(5),
@@ -164,34 +172,29 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                 height: 20,
                                 fit: BoxFit.contain,
                               ),
-                              
-                              
-                                Expanded(
-                                  child: Text(
-                                    pObj["name"].toString(),
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: ColorExtension.primaryText,
-                                      fontWeight: FontWeight.w700,
-                                    ),
+                              Expanded(
+                                child: Text(
+                                  pObj["name"].toString(),
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: ColorExtension.primaryText,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
-                              
+                              ),
                               InkWell(
-                            
-                              onTap: (){
-                                setState(() {
-                                  selectMethod = index;
-                                });
-                              },
-                              child: Icon(
-                                selectMethod == index
-                                ? Icons.radio_button_on
-                                : Icons.radio_button_off,
-                                color: ColorExtension.primary,
-                                size: 20,
-                              )
-                                
+                                onTap: () {
+                                  setState(() {
+                                    selectMethod = index;
+                                  });
+                                },
+                                child: Icon(
+                                  selectMethod == index
+                                      ? Icons.radio_button_on
+                                      : Icons.radio_button_off,
+                                  color: ColorExtension.primary,
+                                  size: 20,
+                                ),
                               ),
                             ],
                           ),
@@ -199,11 +202,10 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                       },
                     ),
                     const SizedBox(height: 4),
-                       Divider(
+                    Divider(
                       color: ColorExtension.primaryText.withOpacity(0.1),
                       thickness: 10,
                     ),
-                  
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -217,7 +219,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         ),
                         Text(
                           "\$100",
-                       style: TextStyle(
+                          style: TextStyle(
                             color: ColorExtension.primaryText,
                             fontSize: 18,
                             fontWeight: FontWeight.w700,
@@ -225,7 +227,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         ),
                       ],
                     ),
-                       const SizedBox(height: 4),
+                    const SizedBox(height: 4),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -239,7 +241,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         ),
                         Text(
                           "\$5",
-                       style: TextStyle(
+                          style: TextStyle(
                             color: ColorExtension.primaryText,
                             fontSize: 18,
                             fontWeight: FontWeight.w700,
@@ -295,7 +297,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         ),
                       ],
                     ),
-                       Divider(
+                    Divider(
                       color: ColorExtension.primaryText.withOpacity(0.1),
                       thickness: 10,
                     ),

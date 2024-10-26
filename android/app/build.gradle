@@ -4,6 +4,15 @@ plugins {
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
+android {
+    defaultConfig {
+        multiDexEnabled true
+    }
+}
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
+
 
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file("local.properties")
