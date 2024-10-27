@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jegoli/co_widget/round_button.dart';
 import 'package:jegoli/common/color_extension.dart';
 import 'package:jegoli/screens/more/change_address.dart';
+import 'package:jegoli/screens/more/checkout_message_screen.dart';
 
 class CheckoutScreen extends StatefulWidget {
   const CheckoutScreen({super.key});
@@ -302,7 +303,16 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                       thickness: 10,
                     ),
                     const SizedBox(height: 25),
-                    RoundButton(onPressed: () {}, title: "Send Order"),
+                    RoundButton(onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        backgroundColor: Colors.transparent,
+                        isScrollControlled: true,
+                         builder: (context){
+                        return const CheckoutMessageScreen();
+                      });
+                    
+                    }, title: "Send Order"),
                     const SizedBox(height: 55),
                   ],
                 ),
