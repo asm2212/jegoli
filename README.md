@@ -84,13 +84,7 @@ Browse Restaurants and Add to Cart: Navigate through restaurants and menus to se
 Place Order and Track Status: Checkout and track order in real time with status updates.
 
 Manage Profile: View order history, manage addresses, and update payment methods.
-## 🤝 Contributing
-Contributions are welcome! To contribute:
 
-Fork the repository.
-Create a new branch for your feature: git checkout -b feature-name
-Commit your changes and push: git push origin feature-name
-Submit a pull request.
 ## 📜 License
 This project is licensed under the MIT License.
 
