@@ -1,4 +1,86 @@
-## jegoli food delivery app
+## Jegoli Food Delivery App
+Jegoli is a feature-rich, Flutter-based food delivery app that provides a seamless experience for users to browse menus, order food, and manage their orders with ease. The app integrates multiple functionalities, from custom map markers to Google Maps and OTP verification, ensuring an intuitive and efficient food delivery process.
+
+<!-- Replace with an actual screenshot URL if available -->
+
+## 📱 Key Features
+Main Tabs
+Home Screen: Displays featured restaurants, popular items, and daily deals.
+Offers: View current promotions and special offers.
+Menu: Browse food categories and view detailed menus.
+Profile: Manage user profile details, saved addresses, and payment preferences.
+More: Access additional features like order history, settings, and app information.
+Additional Screens and Functionalities
+About Us: Overview of the Jegoli app and its mission.
+Cart Management: Easily add items to the cart, modify quantities, and proceed to checkout.
+Address Management: Save and manage delivery addresses with Google Maps integration.
+Checkout & Payment: Seamlessly proceed with order checkout, including payment and address confirmation.
+Order Tracking & Notifications: Real-time updates on order status and notifications for order changes.
+Messages & Inbox: Communication and order-related messages.
+Order History: View past orders with details and reorder options.
+Ratings & Reviews: Rate orders and provide feedback.
+Authentication & Onboarding
+Onboarding: Smooth user onboarding process with app features overview.
+Login/Registration: Secure user authentication with OTP and password options.
+Password Management: Forgot password, reset password, and OTP verification for password recovery.
+## 🚀 Technologies & Packages Used
+Flutter for the application framework and UI
+Firebase for authentication, database, and push notifications
+Google Maps Flutter: Used for mapping and custom markers in delivery address selection
+Image Picker: Allows users to upload profile pictures and other images
+Flutter Rating Bar: Enables users to rate their experience and leave reviews
+OTP Pin Field: Provides an OTP input field for verification during registration and password resets
+Additional Packages
+Package	Description
+animated_text_kit	Adds animated text effects for interactive UI
+dots_indicator	Adds dot indicators for carousels
+curved_navigation_bar	Provides curved navigation bars for easy tabbing
+carousel_slider	Creates an image slider for promotions and ads
+font_awesome_flutter	Provides a rich set of icons
+flutter_rating_bar	Adds rating bar for product and service feedback
+otp_pin_field	Provides PIN field for OTP authentication
+google_maps_flutter	Google Maps integration for address management
+image_picker	Allows user to pick images from gallery or camera
+## 🛠️ Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/jegoli-food-delivery.git
+cd jegoli-food-delivery
+Install dependencies:
+
+bash
+Copy code
+flutter pub get
+Run the app:
+
+bash
+Copy code
+flutter run
+Note: Ensure Firebase is set up with your app’s package name and update the google-services.json file as required.
+
+## 🖼️ Screenshots
+Home Screen
+
+Menu Screen
+
+Order Tracking
+
+## 📚 How to Use
+Onboard and Register/Login: Follow onboarding steps, then create an account or log in.
+Browse Restaurants and Add to Cart: Navigate through restaurants and menus to select items.
+Place Order and Track Status: Checkout and track order in real time with status updates.
+Manage Profile: View order history, manage addresses, and update payment methods.
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+
+Fork the repository.
+Create a new branch for your feature: git checkout -b feature-name
+Commit your changes and push: git push origin feature-name
+Submit a pull request.
+## 📜 License
+This project is licensed under the MIT License.
 <img width="213" alt="jeg" src="https://github.com/user-attachments/assets/9e0cd69e-70f1-4108-b796-b2bd45bbf1dc">
 <img width="215" alt="live" src="https://github.com/user-attachments/assets/1f918a95-cbcb-4fb9-adec-76d71a7834c8">
 <img width="215" alt="fast" src="https://github.com/user-attachments/assets/cedd9fc9-106f-476f-a221-0db5d2bf9739">
