@@ -3,8 +3,6 @@ Jegoli is a feature-rich, Flutter-based food delivery app that provides a seamle
 
 The app integrates multiple functionalities, from custom map markers to Google Maps and OTP verification, ensuring an intuitive and efficient food delivery process.
 
-<!-- Replace with an actual screenshot URL if available -->
-
 ## 📱 Key Features
 Home Screen: Displays featured restaurants, popular items, and daily deals.
 
@@ -42,19 +40,6 @@ Login/Registration: Secure user authentication with OTP and password options.
 
 Password Management: Forgot password, reset password, and OTP verification for password recovery.
 
-## 🚀 Technologies & Packages Used
-
-Flutter for the application framework and UI
-
-Google Maps Flutter: Used for mapping and custom markers in delivery address selection
-
-Image Picker: Allows users to upload profile pictures and other images
-
-Flutter Rating Bar: Enables users to rate their experience and leave reviews
-
-OTP Pin Field: Provides an OTP input field for verification during registration and password resets
-
-
 
 
 
@@ -74,18 +59,11 @@ OTP Pin Field: Provides an OTP input field for verification during registration 
 <img width="217" alt="profile" src="https://github.com/user-attachments/assets/60d1b7ee-41ea-43fd-becc-30fa17ef42c8">
 <img width="214" alt="menu" src="https://github.com/user-attachments/assets/a0863963-8e84-40c0-8a91-e69e7be35163">
 <img width="214" alt="home" src="https://github.com/user-attachments/assets/2f0b0d0f-adb1-41fa-afd4-1dbe3355bd8a">
-<img width="212" alt="Screenshot 2024-10-23" 133214src="https://github.com/user-attachments/assets/e32800e9-aff2-4661-90a2-84b1ddc8525d">
 
 
 
-## 📚 How to Use
-Onboard and Register/Login: Follow onboarding steps, then create an account or log in.
 
-Browse Restaurants and Add to Cart: Navigate through restaurants and menus to select items.
 
-Place Order and Track Status: Checkout and track order in real time with status updates.
-
-Manage Profile: View order history, manage addresses, and update payment methods.
 
 ## 📜 License
 This project is licensed under the MIT License.
