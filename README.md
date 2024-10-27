@@ -6,46 +6,57 @@ The app integrates multiple functionalities, from custom map markers to Google M
 <!-- Replace with an actual screenshot URL if available -->
 
 ## 📱 Key Features
-Main Tabs
 Home Screen: Displays featured restaurants, popular items, and daily deals.
+
 Offers: View current promotions and special offers.
+
 Menu: Browse food categories and view detailed menus.
+
 Profile: Manage user profile details, saved addresses, and payment preferences.
+
 More: Access additional features like order history, settings, and app information.
+
 Additional Screens and Functionalities
+
 About Us: Overview of the Jegoli app and its mission.
+
 Cart Management: Easily add items to the cart, modify quantities, and proceed to checkout.
+
 Address Management: Save and manage delivery addresses with Google Maps integration.
+
 Checkout & Payment: Seamlessly proceed with order checkout, including payment and address confirmation.
+
 Order Tracking & Notifications: Real-time updates on order status and notifications for order changes.
+
 Messages & Inbox: Communication and order-related messages.
+
 Order History: View past orders with details and reorder options.
+
 Ratings & Reviews: Rate orders and provide feedback.
+
 Authentication & Onboarding
+
 Onboarding: Smooth user onboarding process with app features overview.
+
 Login/Registration: Secure user authentication with OTP and password options.
+
 Password Management: Forgot password, reset password, and OTP verification for password recovery.
+
 ## 🚀 Technologies & Packages Used
+
 Flutter for the application framework and UI
+
 Google Maps Flutter: Used for mapping and custom markers in delivery address selection
+
 Image Picker: Allows users to upload profile pictures and other images
+
 Flutter Rating Bar: Enables users to rate their experience and leave reviews
+
 OTP Pin Field: Provides an OTP input field for verification during registration and password resets
 
-## 🛠️ Installation
-Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/asm2212/jegoli.git
-cd jegoli
-Install dependencies:
 
-bash
-Copy code
-flutter pub get
-Run the app:
-flutter run
+
 
 
 ## 🖼️ Screenshots  
@@ -67,8 +78,11 @@ flutter run
 
 ## 📚 How to Use
 Onboard and Register/Login: Follow onboarding steps, then create an account or log in.
+
 Browse Restaurants and Add to Cart: Navigate through restaurants and menus to select items.
+
 Place Order and Track Status: Checkout and track order in real time with status updates.
+
 Manage Profile: View order history, manage addresses, and update payment methods.
 ## 🤝 Contributing
 Contributions are welcome! To contribute:
