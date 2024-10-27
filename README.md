@@ -74,6 +74,7 @@ OTP Pin Field: Provides an OTP input field for verification during registration 
 <img width="217" alt="profile" src="https://github.com/user-attachments/assets/60d1b7ee-41ea-43fd-becc-30fa17ef42c8">
 <img width="214" alt="menu" src="https://github.com/user-attachments/assets/a0863963-8e84-40c0-8a91-e69e7be35163">
 <img width="214" alt="home" src="https://github.com/user-attachments/assets/2f0b0d0f-adb1-41fa-afd4-1dbe3355bd8a">
+![Screenshot 2024-10-23 133214](https://github.com/user-attachments/assets/1732284f-e4fb-4425-af01-4578e3e6ebad)
 
 
 ## 📚 How to Use
